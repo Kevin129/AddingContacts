@@ -10,45 +10,57 @@
         android:id="@+id/editTextImie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name" />
+        android:hint="@string/name"
+        android:inputType="TODO"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextNazwisko"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextImie"
-        android:hint="Last Name" />
+        android:hint="@string/last_name"
+        android:minHeight="48dp"
+        android:inputType="TODO"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextNumerTelefonu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextNazwisko"
-        android:hint="Phone Number" />
+        android:hint="@string/phone_number"
+        android:minHeight="48dp"
+        android:textColorHint="#33691E"
+        android:autofillHints=""
+        android:inputType="TODO" />
 
     <Button
         android:id="@+id/buttonDodaj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/editTextNumerTelefonu"
-        android:text="Add"
-        android:backgroundTint="@color/blue"/>
+        android:backgroundTint="@color/blue"
+        android:text="@string/add"
+        android:textColor="#4A148C" />
 
     <Button
         android:id="@+id/buttonWyswietl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonDodaj"
-        android:text="Show Contacts"
-        android:backgroundTint="@color/blue"/>
+        android:backgroundTint="@color/blue"
+        android:text="@string/show_contacts"
+        android:textColor="#4A148C" />
 
     <Button
         android:id="@+id/buttonUsun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonWyswietl"
-        android:text="Delete Contact"
-        android:backgroundTint="@color/blue"/>
+        android:backgroundTint="@color/blue"
+        android:text="@string/delete_contact"
+        android:textColor="#4A148C" />
 
     <ListView
         android:id="@+id/listViewKontakty"
